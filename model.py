@@ -12,7 +12,6 @@ MODEL_NAME = "prajjwal1/bert-small"
 MAX_LEN = 300
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
-
 model = AutoModelForQuestionAnswering.from_pretrained(MODEL_NAME, attn_implementation="eager").to(device)
 
 
